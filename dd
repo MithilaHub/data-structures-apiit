@@ -1,0 +1,14 @@
+class linkedlist:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+    def is empty(self):
+    if self.head:
+        return False
+    else:
+        return True
+    def insert_front(self, node):
+        if self.is_empty():
+            self.head = node
+            self.tail = node
+        else:
